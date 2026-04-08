@@ -223,4 +223,27 @@ OK
 
 ---
 
+## 2026-04-08 (HKT) — 上传 GitHub
+
+### User:
+
+你帮我push到github上吧，/Users/haiwenbao/Documents/IIMT3688/Githubguide.pdf 这里有指引
+
+### Assistant:
+
+阅读了 GitHub Guide PDF，确认账号 `hjjbh1314` 已通过 `gh` CLI 登录。
+
+执行了以下步骤：
+1. `git init` — 初始化 Git 仓库
+2. `git add` — 暂存 9 个文件（`.env.example`、`.gitignore`、`README.md`、`checkpoint.json`、`crews.py`、`output.txt`、`pipeline.py`、`prompt-log.md`、`requirements.txt`）；确认 `.env`、`CHECKLIST.md`、`tests/` 均未暂存
+3. `git commit` — 提交，message: "Initial submission: Mini-Assignment 4 — Orchestration"
+4. `gh repo create Haiwen_Bao-Week9-orchestration --public --source=. --remote=origin --push` — 创建公开仓库并推送
+
+✅ 成功上传到 GitHub！
+仓库地址：https://github.com/hjjbh1314/Haiwen_Bao-Week9-orchestration
+
+提交到 Moodle 时使用此 HTTPS 链接：`https://github.com/hjjbh1314/Haiwen_Bao-Week9-orchestration`
+
+---
+
 ## [Continue appending subsequent conversations below with timestamps]
