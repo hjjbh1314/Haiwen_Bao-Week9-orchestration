@@ -3252,3 +3252,189 @@ We will track performance across three layers: Commercial, Operational, and Bran
 2026-04-08T18:02:59  INFO      ======================================================================
 2026-04-08T18:02:59  INFO      PIPELINE COMPLETE  2026-04-08T18:02:59.277703
 2026-04-08T18:02:59  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Loaded 0 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmp_e4kasyb.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE START  2026-04-09T21:08:23.487413
+2026-04-09T21:08:23  INFO      Topic: test topic
+2026-04-09T21:08:23  INFO      Stages: 2
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [START] stage_0: Research Crew
+2026-04-09T21:08:23  INFO      [DONE] stage_0 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp_e4kasyb.json
+2026-04-09T21:08:23  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:08:23  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp_e4kasyb.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE COMPLETE  2026-04-09T21:08:23.490479
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Loaded 0 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmpqrm_wm7w.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE START  2026-04-09T21:08:23.492066
+2026-04-09T21:08:23  INFO      Topic: test
+2026-04-09T21:08:23  INFO      Stages: 2
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [START] stage_0: Research Crew
+2026-04-09T21:08:23  ERROR     [FAIL] stage_0 attempt 1/3 failed: Simulated failure #1
+2026-04-09T21:08:23  WARNING   [RETRY] stage_0 — attempt 2/3 (waiting 1s after previous failure)
+2026-04-09T21:08:23  ERROR     [FAIL] stage_0 attempt 2/3 failed: Simulated failure #2
+2026-04-09T21:08:23  WARNING   [RETRY] stage_0 — attempt 3/3 (waiting 2s after previous failure)
+2026-04-09T21:08:23  INFO      [DONE] stage_0 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmpqrm_wm7w.json
+2026-04-09T21:08:23  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:08:23  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmpqrm_wm7w.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE COMPLETE  2026-04-09T21:08:23.495895
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Loaded 0 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmpp4ddjbwu.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE START  2026-04-09T21:08:23.498119
+2026-04-09T21:08:23  INFO      Topic: test topic
+2026-04-09T21:08:23  INFO      Stages: 2
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [START] stage_0: Research Crew
+2026-04-09T21:08:23  INFO      [DONE] stage_0 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmpp4ddjbwu.json
+2026-04-09T21:08:23  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:08:23  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmpp4ddjbwu.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE COMPLETE  2026-04-09T21:08:23.500776
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Loaded 1 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmpehvu69zh.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE START  2026-04-09T21:08:23.502185
+2026-04-09T21:08:23  INFO      Topic: test
+2026-04-09T21:08:23  INFO      Stages: 2
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [SKIP] stage_0 (Research Crew) — already in checkpoint
+2026-04-09T21:08:23  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:08:23  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmpehvu69zh.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE COMPLETE  2026-04-09T21:08:23.504868
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Loaded 0 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmp53afwp76.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE START  2026-04-09T21:08:23.506404
+2026-04-09T21:08:23  INFO      Topic: test topic
+2026-04-09T21:08:23  INFO      Stages: 2
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [START] stage_0: Research Crew
+2026-04-09T21:08:23  INFO      [DONE] stage_0 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp53afwp76.json
+2026-04-09T21:08:23  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:08:23  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp53afwp76.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE COMPLETE  2026-04-09T21:08:23.509305
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Loaded 0 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmp0tnqtv1v.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE START  2026-04-09T21:08:23.510853
+2026-04-09T21:08:23  INFO      Topic: test
+2026-04-09T21:08:23  INFO      Stages: 2
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      [START] stage_0: Research Crew
+2026-04-09T21:08:23  INFO      [DONE] stage_0 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp0tnqtv1v.json
+2026-04-09T21:08:23  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:08:23  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:08:23  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp0tnqtv1v.json
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  INFO      PIPELINE COMPLETE  2026-04-09T21:08:23.514523
+2026-04-09T21:08:23  INFO      ======================================================================
+2026-04-09T21:08:23  CRITICAL  [ABORT] stage_0 failed after 3 retries. Pipeline halted.  Fix the error and re-run to resume.
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Loaded 0 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmpu213rgi2.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE START  2026-04-09T21:09:07.184322
+2026-04-09T21:09:07  INFO      Topic: test topic
+2026-04-09T21:09:07  INFO      Stages: 2
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [START] stage_0: Research Crew
+2026-04-09T21:09:07  INFO      [DONE] stage_0 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmpu213rgi2.json
+2026-04-09T21:09:07  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:09:07  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmpu213rgi2.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE COMPLETE  2026-04-09T21:09:07.188666
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Loaded 0 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmp6fqaefko.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE START  2026-04-09T21:09:07.190464
+2026-04-09T21:09:07  INFO      Topic: test
+2026-04-09T21:09:07  INFO      Stages: 2
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [START] stage_0: Research Crew
+2026-04-09T21:09:07  ERROR     [FAIL] stage_0 attempt 1/3 failed: Simulated failure #1
+2026-04-09T21:09:07  WARNING   [RETRY] stage_0 — attempt 2/3 (waiting 1s after previous failure)
+2026-04-09T21:09:07  ERROR     [FAIL] stage_0 attempt 2/3 failed: Simulated failure #2
+2026-04-09T21:09:07  WARNING   [RETRY] stage_0 — attempt 3/3 (waiting 2s after previous failure)
+2026-04-09T21:09:07  INFO      [DONE] stage_0 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp6fqaefko.json
+2026-04-09T21:09:07  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:09:07  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp6fqaefko.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE COMPLETE  2026-04-09T21:09:07.195497
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Loaded 0 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmp6xq38dly.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE START  2026-04-09T21:09:07.198926
+2026-04-09T21:09:07  INFO      Topic: test topic
+2026-04-09T21:09:07  INFO      Stages: 2
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [START] stage_0: Research Crew
+2026-04-09T21:09:07  INFO      [DONE] stage_0 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp6xq38dly.json
+2026-04-09T21:09:07  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:09:07  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp6xq38dly.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE COMPLETE  2026-04-09T21:09:07.201880
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Loaded 1 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmpx35rx5yc.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE START  2026-04-09T21:09:07.204159
+2026-04-09T21:09:07  INFO      Topic: test
+2026-04-09T21:09:07  INFO      Stages: 2
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [SKIP] stage_0 (Research Crew) — already in checkpoint
+2026-04-09T21:09:07  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:09:07  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmpx35rx5yc.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE COMPLETE  2026-04-09T21:09:07.206992
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Loaded 0 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmp9o96zfy6.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE START  2026-04-09T21:09:07.208927
+2026-04-09T21:09:07  INFO      Topic: test topic
+2026-04-09T21:09:07  INFO      Stages: 2
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [START] stage_0: Research Crew
+2026-04-09T21:09:07  INFO      [DONE] stage_0 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp9o96zfy6.json
+2026-04-09T21:09:07  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:09:07  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmp9o96zfy6.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE COMPLETE  2026-04-09T21:09:07.212724
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Loaded 0 completed stage(s) from /sessions/beautiful-keen-volta/tmp/tmpftoayidv.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE START  2026-04-09T21:09:07.214554
+2026-04-09T21:09:07  INFO      Topic: test
+2026-04-09T21:09:07  INFO      Stages: 2
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      [START] stage_0: Research Crew
+2026-04-09T21:09:07  INFO      [DONE] stage_0 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmpftoayidv.json
+2026-04-09T21:09:07  INFO      [START] stage_1: Strategy Crew
+2026-04-09T21:09:07  INFO      [DONE] stage_1 completed in 0.0s
+2026-04-09T21:09:07  INFO      [CHECKPOINT] Saved state to /sessions/beautiful-keen-volta/tmp/tmpftoayidv.json
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  INFO      PIPELINE COMPLETE  2026-04-09T21:09:07.217192
+2026-04-09T21:09:07  INFO      ======================================================================
+2026-04-09T21:09:07  CRITICAL  [ABORT] stage_0 failed after 3 retries. Pipeline halted.  Fix the error and re-run to resume.

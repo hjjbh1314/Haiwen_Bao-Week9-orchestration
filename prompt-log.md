@@ -295,3 +295,66 @@ OK
 - 将 `prompt-log.md` 中的部分 API key 片段替换为 `[REDACTED]`
 - 将本次对话追加到 `prompt-log.md`
 - 推送更新到 GitHub
+
+---
+
+## 2026-04-10 (HKT) — 生成测试 + CrewAI Tracing 询问
+
+### User:
+
+你能不能帮我生成一些test，检查一下是不是完整完成了作业的要求
+
+### Assistant:
+
+新增了 3 个测试文件，覆盖作业评分标准的每一条要求，全部 39 个测试通过：
+
+**`tests/test_crew_structure.py`（10 个测试 — Pipeline Design 30%）**
+静态源码分析（AST + regex），无需安装 crewai 或 API key：
+- 两个 crew builder 函数存在（build_research_crew / build_strategy_crew）
+- Research/Strategy Crew 各含 ≥1 Agent 和 ≥1 Task 的调用
+- `{previous_result}` 和 `{topic}` 占位符存在于对应 crew 的任务描述中
+- `kickoff(inputs=...)` 在 pipeline.py 中被调用
+- Strategy task 使用 `context=` 参数
+
+**`tests/test_deliverables.py`（15 个测试 — 交付物完整性）**
+- 7 个必交文件全部存在
+- `checkpoint.json` 含两个真实 stage 数据且内容非空
+- `checkpoint.json` 是合法 JSON
+- `output.txt` 非空（有真实运行日志）
+- `prompt-log.md` 无 API key 片段、有日期时间戳、有 User/Assistant 段落
+- `requirements.txt` 含 crewai 和 python-dotenv
+- `.env.example` 存在
+- `.env` 在 `.gitignore` 中
+- 无 `.ipynb` 文件
+- `load_dotenv()` 已在 pipeline.py 和 crews.py 中调用
+- DeepSeek LLM 通过 `LLM(base_url=..., api_key=...)` 配置
+
+**`tests/test_logging.py`（7 个测试 — Orchestration Implementation 35%）**
+- `[START]` 每个 stage 出现 1 次（共 2 次）
+- `[DONE]` 每个成功 stage 出现 1 次（共 2 次）
+- `[FAIL]` 在每次失败尝试时出现（模拟 2 次失败 → 出现 2 次）
+- `[SKIP]` 在 resume 时对已完成 stage 出现
+- 日志输出含 ISO-8601 格式时间戳
+- 管道开始/结束横幅（PIPELINE START / PIPELINE COMPLETE）
+- 最终报告打印到 stdout
+
+加上已有的 `test_resume.py`（7 个测试），总计 **39 个测试，全部通过**。
+
+```
+Ran 39 tests in 0.068s
+OK
+```
+
+---
+
+### User:
+
+│  Info: Tracing is disabled. To enable tracing... 我这里需要把tracing打开吗，别忘了记录prompt-log
+
+### Assistant:
+
+不需要开启 tracing。
+
+这条信息是 CrewAI 的可选**云端可观测性功能**提示，会把 agent 执行数据发送到 CrewAI 云平台（类似 LangSmith 对 LangChain 的作用）。作业要求的日志功能已由 `pipeline.py` 里的 `logging` 模块完整实现（写入 `output.txt` + 控制台），两者完全独立。
+
+开启 tracing 的唯一理由是想用 CrewAI dashboard 可视化 agent 执行流程，但这不在作业评分标准内，无需修改任何代码或配置。
